@@ -60,9 +60,9 @@ namespace LSR
             this.fluentDesignFormControl1.FluentDesignForm = this;
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
-            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1398, 38);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1748, 46);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             // 
@@ -78,10 +78,10 @@ namespace LSR
             // mView
             // 
             this.mView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mView.Location = new System.Drawing.Point(60, 38);
-            this.mView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.mView.Location = new System.Drawing.Point(375, 46);
+            this.mView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mView.Name = "mView";
-            this.mView.Size = new System.Drawing.Size(1338, 963);
+            this.mView.Size = new System.Drawing.Size(1373, 1059);
             this.mView.TabIndex = 0;
             // 
             // accordionControlSeparator4
@@ -158,6 +158,7 @@ namespace LSR
             this.accordionControlElement1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.newWord,
             this.reviewWord});
+            this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement1.ImageOptions.SvgImage")));
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Text = "单词背记";
@@ -199,20 +200,19 @@ namespace LSR
             this.accordionControlSeparator3,
             this.set,
             this.accordionControlSeparator4});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 38);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 46);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.accordionControl1.Name = "accordionControl1";
-            this.accordionControl1.OptionsMinimizing.State = DevExpress.XtraBars.Navigation.AccordionControlState.Minimized;
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(60, 963);
+            this.accordionControl1.Size = new System.Drawing.Size(375, 1059);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
             // MainView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1398, 1001);
+            this.ClientSize = new System.Drawing.Size(1748, 1105);
             this.ControlContainer = this.mView;
             this.Controls.Add(this.mView);
             this.Controls.Add(this.accordionControl1);
@@ -220,7 +220,7 @@ namespace LSR
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("MainView.IconOptions.SvgImage")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "MainView";
             this.NavigationControl = this.accordionControl1;

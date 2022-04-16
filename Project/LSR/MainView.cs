@@ -13,7 +13,7 @@ namespace LSR
     public partial class MainView : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
         private SqliteManager manager = new SqliteManager();
-        public static int Kc = 0;
+        public static double Kc = 0.0;
         FunView1 view1;
         FunView2 view2;
         FunView3 view3;

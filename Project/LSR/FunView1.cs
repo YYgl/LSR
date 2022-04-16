@@ -89,6 +89,7 @@ namespace LSR
             label_sentence_CN_1.AppearanceItemCaption.ForeColor = System.Drawing.Color.DarkSeaGreen;
             label_sentence_CN_2.Text = " ";
             label_sentence_CN_3.Text = " ";
+            pictureEdit3.Visible = false;
         }
 
         private void wordsOver()
@@ -110,6 +111,7 @@ namespace LSR
             label_sentence_CN_1.AppearanceItemCaption.ForeColor = System.Drawing.Color.DarkSeaGreen;
             label_sentence_CN_2.Text = " ";
             label_sentence_CN_3.Text = " ";
+            pictureEdit3.Visible = false;
         }
 
         private void getNextWord()
@@ -447,6 +449,7 @@ namespace LSR
             label_sentence_CN_2.Text = " ";
             label_sentence_CN_3.Text = " ";
             label_back.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+            pictureEdit3.Visible = false;
         }
 
         private void showAll()
@@ -459,6 +462,7 @@ namespace LSR
             label_2_showonly.Visible = true;
             label_meaning.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
             label_word.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
+            pictureEdit3.Visible = true;
             string pronun_raw = showords[current_index].pronun_raw;
             if (pronun_raw == "null" || pronun_raw == "")
             {
@@ -539,6 +543,7 @@ namespace LSR
                 Application.DoEvents();
             }
         }
+
 
     }
     public class myWord

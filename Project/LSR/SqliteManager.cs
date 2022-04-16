@@ -584,7 +584,18 @@ namespace LSR
 
             // 执行sql语句
             SQLiteCommand command = new SQLiteCommand(sql, db_connection);
-            MainView.Kc = int.Parse(command.ExecuteScalar().ToString());
+            MainView.Kc = (double)command.ExecuteScalar();
+        }
+
+        public void setKc(double Kc)
+        {
+            // 构造sql语句
+            string sql = string.Format("UPDATE SetInfo " +
+                                       "SET Kc = {0}", Kc);
+
+            // 执行sql语句
+            SQLiteCommand command = new SQLiteCommand(sql, db_connection);
+            command.ExecuteNonQuery();
         }
     }
 }

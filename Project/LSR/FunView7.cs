@@ -68,5 +68,23 @@ namespace LSR
             int.TryParse(textEdit_new_words_ratio.Text.Split('.')[0], out ratio);
             manager.setInfo(total, daily, ratio);
         }
+
+        private void trackBarControl1_EditValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                double kc = trackBarControl1.Value/10.0;
+                Console.WriteLine(trackBarControl1.Value);
+                Console.WriteLine(kc);
+                manager.setKc(kc);
+
+            }
+            catch
+            {
+
+            }
+        }
+
+
     }
 }
